@@ -19,15 +19,3 @@ export default function First() {
     </>
   );
 }
-
-export async function getServerSideProps() {
-  const url = "https://graphqlzero.almansi.me/api";
-  const res = await fetch(url);
-  const data = await res.json();
-
-  console.log(data);
-
-  return {
-    props: {},
-  };
-}
